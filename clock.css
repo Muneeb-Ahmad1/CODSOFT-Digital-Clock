@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #3498db, #e74c3c);
+    color: #ecf0f1;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .clock {
+    display: flex;
+    font-size: 3em;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: pulse 1.5s infinite alternate;
+  }
+  
+  .clock div {
+    padding: 0 0.2em;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  #hours,
+  #minutes,
+  #seconds {
+    color: #ffdba2e3;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
